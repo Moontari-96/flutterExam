@@ -9,6 +9,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        // 화면 오른쪽 플로팅 작업 버튼
+        floatingActionButton: FloatingActionButton(
+            onPressed: (){},
+            child: Text('클릭')
+        ),
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min, // 세로 가운데 정렬
@@ -65,7 +70,7 @@ class MyApp extends StatelessWidget {
                   width: 100.0,
                   height: 100.0,
                 ),
-              )
+              ),
             ],
           ),
         ),
